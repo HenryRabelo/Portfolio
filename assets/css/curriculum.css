@@ -1,3 +1,7 @@
+#curriculum-body {
+    padding: 70px;
+}
+
 #info-col {
     margin-right: 15px;
 }
@@ -12,12 +16,4 @@
 
 #bg-info {
     background-color: #369CDE;
-}
-
-#contact-buttons {
-    padding-bottom: 10px;
-}
-
-#next-item {
-    padding-top: 30px;
 }
