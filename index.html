@@ -20,43 +20,21 @@
         <!-- FontAwesome Functionality -->
         <script src="https://kit.fontawesome.com/c1cd3c0b1b.js" crossorigin="anonymous"></script>
 
+        <!-- JQuery Slim Functionality -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
         <!-- Customized CSS for this page -->
         <link rel="stylesheet" href="assets/css/global.css"/>
         <link rel="stylesheet" href="assets/css/index.css"/>
+
+        <!-- Customized JS for this page -->
+        <script type="text/javascript" src="assets/js/jq-include.css"></script>
 
     </head>
 
     <body class="bg-light">
 
-        <nav  id="navbar" class="navbar sticky-top navbar-light bg-white border-bottom shadow-sm justify-content-between">
-            <a class="text-dark text-decoration-none" href="index.html">
-                <h3 class="my-0 mr-md-auto font-weight-normal"> Henry Rabelo </h3>
-            </a>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="projects.html"> Projetos </a>
-                <a class="p-2 text-dark" href="#"> Contato </a>
-                <a class="p-2 text-dark" href="curriculum.html"> Curriculum Vitae </a>
-
-                <a class="btn btn-outline-primary" href="mailto:henry.rabelo@protonmail.com" target="blank">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-                <a class="btn btn-outline-primary" href="https://github.com/HenryRabelo" target="blank">
-                    <i class="fab fa-github-alt"></i>
-                </a>
-
-                <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/henrique-rabelo-49764817b" target="blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-
-            </nav>
-        </nav>
-
-        <div id="banner" class="banner">
-
-            <!-- Banner is handled through CSS -->
-
-        </div>
+        <div data-include="assets/includes/header.html"></div>
 
         <div id="content" class="container p-3">
 
@@ -67,50 +45,7 @@
 
             <div id="spacing" class="w-100"> </div>
 
-            <div class="row">
-
-                <div id="left-col" class="col pr-5">
-
-                    <div id="card" class="card shadow-sm">
-                        <h4 class="card-header text-center"> Sobre </h4>
-                        <div class="card-body">
-                            <p class="card-text text-justify">
-                                Meu nome é Henrique Rabelo, tenho 21 anos e estou cursando Ciências da Computação,
-                                na faculdade PUC Minas, campus de Poços de Caldas.
-                            </p>
-                            <p class="card-text text-justify">
-                                Desde pequeno, eu sempre gostei de obter conhecimento e desmontar coisas como brinquedos e equipamentos,
-                                para entender como eles funcionavam. Além disso, eu sempre gostei de ter uma maneira sistemática de fazer as coisas.
-                            </p>
-                            <p class="card-text text-justify">
-                                Sinta-se à vontade para ver meus projetos realizados ou obter uma cópia do
-                                meu Curriculum Vitae e cartão de visitas.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--
-                    <div id="card" class="card shadow-sm">
-                        <h4 class="card-header text-center"> Extra </h4>
-                        <div class="card-body">
-                            <p class="card-text text-justify">    
-                                Assim, não é de se espantar que eu tenha escolhido o curso de Ciência da Computação e me apaixonado por programação.
-                                Eu me lembro, também, de ter um fascínio imenso pela internet e por
-                                computadores, chagando a montar e desbravar maneiras de montar páginas HTML.
-                                Possuo o compromisso de sempre manter meu código limpo e melhorá-lo.
-                                Tenho fascínio com o conceito de open-source e 
-                            </p>
-                        </div>
-                    </div>
-                    -->
-
-                </div>
-
-                <div id="right-col" class="col pl-5">
-                    <img id="about-workstation" class="rounded mx-auto d-block" src="assets/img/workstation-preview.png" alt="Minha Área de Trabalho de Escolha">
-                </div>
-
-            </div>
+            <div data-include="assets/includes/info.html"></div>
 
             <div id="spacing" class="w-100"> </div>
 
@@ -179,7 +114,7 @@
                         <div class="card-body">
                             <h4 class="card-title"> Entre em contato </h4>
                             <p class="card-text"> Veja por quais meios é possível entrar em contato comigo. </p>
-                            <a href="#" class="btn btn-primary d-block stretched-link"> Contato </a>
+                            <a href="contact.html" class="btn btn-primary d-block stretched-link"> Contato </a>
                         </div>
                     </div>
 
@@ -202,14 +137,7 @@
 
         </div>
 
-        <footer id="footer" class="my-5 p-5 text-muted text-center text-small border-top">
-            <p class="mb-1"> Desenvolvido por Henry Rabelo </p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="projects.html"> Projetos </a></li>
-                <li class="list-inline-item"><a href="https://github.com/HenryRabelo"> Github </a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/in/henrique-rabelo-49764817b"> Linkedin </a></li>
-            </ul>
-        </footer>
+        <div data-include="assets/includes/footer.html"></div>
 
     </body>
 </html>

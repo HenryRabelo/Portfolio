@@ -28,35 +28,7 @@
 
     <body class="bg-light">
 
-        <nav  id="navbar" class="navbar sticky-top navbar-light bg-white border-bottom shadow-sm justify-content-between">
-            <a class="text-dark text-decoration-none" href="index.html">
-                <h3 class="my-0 mr-md-auto font-weight-normal"> Henry Rabelo </h3>
-            </a>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="projects.html"> Projetos </a>
-                <a class="p-2 text-dark" href="#"> Contato </a>
-                <a class="p-2 text-dark" href="curriculum.html"> Curriculum Vitae </a>
-
-                <a class="btn btn-outline-primary" href="mailto:henry.rabelo@protonmail.com" target="blank">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-                <a class="btn btn-outline-primary" href="https://github.com/HenryRabelo" target="blank">
-                    <i class="fab fa-github-alt"></i>
-                </a>
-
-                <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/henrique-rabelo-49764817b" target="blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-
-            </nav>
-        </nav>
-
-        <div id="banner" class="banner">
-
-            <!-- Banner is handled through CSS -->
-
-        </div>
+        <div data-include="assets/includes/header.html"></div>
 
         <div id="content" class="container p-3">
 
@@ -141,27 +113,21 @@
                                 <div class="card-body text-white">
 
                                     <p class="card-title text-justify font-weight-bolder pt-3"> CONTATO: </p>
-                                    
-                                    <div class="row pt-0">
-                                        <div class="col text-center">
-                                            <a class="btn btn-outline-light" href="mailto:henry.rabelo@protonmail.com" target="blank">
-                                                <i class="fas fa-envelope"></i> E-mail
-                                            </a>
-                                        </div>
+
+                                    <div class="container pt-0 text-center">
+                                        <a class="btn btn-outline-light" href="mailto:henry.rabelo@protonmail.com" target="blank">
+                                            <i class="fas fa-envelope"></i> E-mail
+                                        </a>
                                     </div>
-                                    <div class="row pt-2">
-                                        <div class="col text-center">
-                                            <a class="btn btn-outline-light" href="https://github.com/HenryRabelo" target="blank">
-                                                <i class="fab fa-github-alt"></i> Github
-                                            </a>
-                                        </div>
+                                    <div class="container pt-2 text-center">
+                                        <a class="btn btn-outline-light" href="https://github.com/HenryRabelo" target="blank">
+                                            <i class="fab fa-github-alt"></i> Github
+                                        </a>
                                     </div>
-                                    <div class="row pt-2">
-                                        <div class="col text-center">
-                                            <a class="btn btn-outline-light" href="https://www.linkedin.com/in/henrique-rabelo-49764817b" target="blank">
-                                                <i class="fab fa-linkedin-in"></i> Linkedin
-                                            </a>
-                                        </div>
+                                    <div class="container pt-2 text-center">
+                                        <a class="btn btn-outline-light" href="https://www.linkedin.com/in/henrique-rabelo-49764817b" target="blank">
+                                            <i class="fab fa-linkedin-in"></i> Linkedin
+                                        </a>
                                     </div>
 
                                     <p class="card-title font-weight-bolder pt-5"> IDIOMAS: </p>
@@ -226,14 +192,7 @@
 
         </div>
 
-        <footer id="footer" class="my-5 pt-5 text-muted text-center text-small border-top">
-            <p class="mb-1"> Desenvolvido por Henry Rabelo </p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="projects.html"> Projetos </a></li>
-                <li class="list-inline-item"><a href="https://github.com/HenryRabelo"> Github </a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/in/henrique-rabelo-49764817b"> Linkedin </a></li>
-            </ul>
-        </footer>
+        <div data-include="assets/includes/footer.html"></div>
 
     </body>
 </html>
